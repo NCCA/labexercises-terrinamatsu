@@ -61,6 +61,28 @@ TEST(Vec3, userCtor)
   ASSERT_TRUE(v.z == 3.0f);
 }
 
+TEST(Vec3, operators)
+{
+  Vec3 v1(1.0f, 1.0f, 1.0f);
+  Vec3 v2(2.1f, 3.2f, 4.3f);
+
+  Vec3 v3 = v1 * v2;
+  Vec3 v4 = v1 + v2;
+  Vec3 v5 = v1 * 5;
+
+  ASSERT_FLOAT_EQ(v3.x, 2.1f);
+  ASSERT_FLOAT_EQ(v3.y, 3.2f);
+  ASSERT_FLOAT_EQ(v3.z, 4.3f);
+
+  ASSERT_FLOAT_EQ(v4.x, 3.1f);
+  ASSERT_FLOAT_EQ(v4.y, 4.2f);
+  ASSERT_FLOAT_EQ(v4.z, 5.3f);
+
+  ASSERT_FLOAT_EQ(v5.x, 5.0f);
+  ASSERT_FLOAT_EQ(v5.y, 5.0f);
+  ASSERT_FLOAT_EQ(v5.z, 5.0f);
+}
+
 TEST(Emitter, ctor)
 {
   Emitter e;

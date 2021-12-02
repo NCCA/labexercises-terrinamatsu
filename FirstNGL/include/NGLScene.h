@@ -1,6 +1,7 @@
 #ifndef NGLSCENE_H_
 #define NGLSCENE_H_
 #include <ngl/Vec3.h>
+#include <ngl/Mat4.h>
 #include "WindowParams.h"
 // this must be included after NGL includes else we get a clash with gl libs
 #include <QOpenGLWindow>
@@ -79,6 +80,11 @@ private:
     /// position for our model
     ngl::Vec3 m_modelPos;
 
+    ngl::Mat4 m_view;
+    ngl::Mat4 m_project;
+    ngl::Mat4 m_modelTx;
+
+    void loadMatrixToShader();
 };
 
 

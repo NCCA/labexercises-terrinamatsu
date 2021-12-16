@@ -1,0 +1,68 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.5"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "FirstQT_GUI",
+					"targetIndexes" : 
+					[
+						0,
+						1
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "FirstQT_GUI::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-FirstQT_GUI-Debug-ca1f802bbab838e97266.json",
+					"name" : "FirstQT_GUI",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "FirstQT_GUI_autogen::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-FirstQT_GUI_autogen-Debug-7b4628a72539c48f3596.json",
+					"name" : "FirstQT_GUI_autogen",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/s5107963/ASE/labexercises-terrinamatsu/build-FirstQT_GUI-Desktop_Qt_GCC_64bit-Debug",
+		"source" : "/home/s5107963/ASE/labexercises-terrinamatsu/FirstQT_GUI"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 0
+	}
+}

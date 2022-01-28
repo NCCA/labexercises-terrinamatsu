@@ -7,7 +7,7 @@
 
 class Emitter
 {
-    public:
+    public :
         Emitter() = default;
         Emitter(size_t _numParticles, const ngl::Vec3 &_emitDir, const ngl::Vec3 &_pos={0,0,0});
 
@@ -18,7 +18,9 @@ class Emitter
         size_t numParticles() const;
 
         void updatePos(float _dx, float _dy, float _dz);
-    private:
+        void changeNumberParticles(size_t _num);
+
+    private :
         void resetParticle(size_t _index);
         //std::vector<Particle> m_particles;
         std::vector<ngl::Vec4> m_posSize;

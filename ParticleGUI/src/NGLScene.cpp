@@ -8,10 +8,9 @@
 #include <ngl/Util.h>
 #include <iostream>
 
-NGLScene::NGLScene()
+NGLScene::NGLScene(QWidget *_parent) : QOpenGLWidget(_parent)
 {
-  // re-size the widget to that of the parent (in this case the GLFrame passed in on construction)
-  setTitle("Particle NGL");
+
 }
 
 
@@ -20,7 +19,10 @@ NGLScene::~NGLScene()
   std::cout<<"Shutting down NGL, removing VAO's and Shaders\n";
 }
 
-
+void NGLScene::changeNumberOfParticles(int _num)
+{
+  m_emitter->changeNumberParticles(_num);
+}
 
 void NGLScene::resizeGL(int _w , int _h)
 {

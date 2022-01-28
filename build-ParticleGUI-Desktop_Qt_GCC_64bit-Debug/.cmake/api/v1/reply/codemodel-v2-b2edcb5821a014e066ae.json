@@ -1,0 +1,77 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.0"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "ParticleGUIBuild",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "CopyShadersAndfonts::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-CopyShadersAndfonts-Debug-b47a2894a9366a56f166.json",
+					"name" : "CopyShadersAndfonts",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ParticleGUI::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ParticleGUI-Debug-b6e97a1fc1ba44307ae2.json",
+					"name" : "ParticleGUI",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ParticleGUI_autogen::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ParticleGUI_autogen-Debug-9a1860ef183590d214cb.json",
+					"name" : "ParticleGUI_autogen",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/s5107963/ASE/labexercises-terrinamatsu/build-ParticleGUI-Desktop_Qt_GCC_64bit-Debug",
+		"source" : "/home/s5107963/ASE/labexercises-terrinamatsu/ParticleGUI"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 0
+	}
+}

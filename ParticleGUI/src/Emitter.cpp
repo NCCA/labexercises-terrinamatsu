@@ -16,21 +16,28 @@ Emitter::Emitter(size_t _numParticles, const ngl::Vec3 &_emitDir, const ngl::Vec
     m_emitDir = _emitDir;
     m_numParticles = _numParticles;
 
-    m_posSize.resize(m_numParticles);
-    m_dir.resize(m_numParticles);
-    m_colour.resize(m_numParticles);
-    m_maxLife.resize(m_numParticles);
-    m_life.resize(m_numParticles);
+    changeNumberParticles(_numParticles);
 
-    for(size_t p = 0; p < m_numParticles; ++p)
-    {
-        resetParticle(p);
-    }
     m_vao = ngl::vaoFactoryCast<ngl::MultiBufferVAO>(ngl::VAOFactory::createVAO(ngl::multiBufferVAO, GL_POINTS));
     m_vao->bind();
     m_vao->setData(ngl::MultiBufferVAO::VertexData(0,0)); // points
     m_vao->setData(ngl::MultiBufferVAO::VertexData(0,0)); // colours
     m_vao->unbind();
+}
+
+void Emitter::changeNumberParticles(size_t _numParticles)
+{
+  m_numParticles = _numParticles;
+  m_posSize.resize(_numParticles);
+  m_dir.resize(_numParticles);
+  m_colour.resize(_numParticles);
+  m_maxLife.resize(_numParticles);
+  m_life.resize(_numParticles);
+
+  for(size_t p = 0; p < m_numParticles; ++p)
+  {
+      resetParticle(p);
+  }
 }
 
 void Emitter::resetParticle(size_t _index)
